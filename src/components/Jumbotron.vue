@@ -1,9 +1,9 @@
 <template>
     <div class="jumbo-img">
        <div class="text-jumbotron">
-        <h1>Tech Forum!</h1>
-        <p>Discuss all thr latest technology news and trends</p>
-        <a href="#" class="btn text-white color-btn rounded-0 ">GET AVADA NOW!</a>
+            <h1>Tech Forum!</h1>
+            <p>Discuss all thr latest technology news and trends</p>
+            <a href="#" class="btn text-white color-btn rounded-0 ">GET AVADA NOW!</a>
                 
        </div>
        
@@ -18,7 +18,7 @@ export default{
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss" >
 @use "../styles/partials/variables" as *;
 @use "bootstrap";
 .jumbo-img{
@@ -31,9 +31,11 @@ export default{
     }
     .text-jumbotron{
         color: white;
-        position: absolute;
-        left: 23%;
-        top: 29%;
+        max-width: 1170px;
+        margin: auto;
+        padding-top: 146px;
+        padding-left: 26px;
+
     }
    .color-btn{
     background-color: $color-primary;

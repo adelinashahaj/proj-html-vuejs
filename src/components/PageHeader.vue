@@ -55,7 +55,7 @@ nav{
 }
 nav img{
     display: inline-block;
-    padding: 0.5rem 1rem;
+  
 }
 .navbar-links { 
     display: flex;

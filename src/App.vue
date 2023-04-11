@@ -10,12 +10,18 @@ import PageHeader from './components/PageHeader.vue';
 import PageMain from './components/PageMain.vue';
 import PageFooter from './components/PageFooter.vue';
 import Jumbotron from './components/Jumbotron.vue';
+import FaturedArticle from './components/FaturedArticle.vue';
+import LatestNews from './components/LatestNews.vue';
+import LatestNews2 from './components/LatestNews2.vue';
 export default{
   components: {
     PageHeader,
     PageMain,
     PageFooter,
-    Jumbotron
+    Jumbotron,
+    FaturedArticle,
+    LatestNews,
+    LatestNews2
     
   },
     data(){
