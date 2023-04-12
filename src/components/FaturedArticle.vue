@@ -6,7 +6,7 @@
                     <p>FATURED ARTICLE</p>
                     <h1>Cras malesuada et orci eget pharetra</h1>
                     <p>Discuss all thr latest technology news and trends</p>
-                    <a href="#" class="btn text-white color-btn rounded-0 ">READ MORE</a>
+                    <a href="#" class="btn text-white bg-btn rounded-0 ">READ MORE <i class="fa-solid fa-angle-right fnt-size"></i> </a>
                             
                 </div>
         
@@ -22,14 +22,22 @@
 
 <script>
 export default{
+    name: "FaturedArticle",
+    data(){
+
+    }
 
 }
 </script>
 
-<style lang="scss"  >
+<style lang="scss" scoped >
 @use "../styles/partials/variables" as *;
 @use "bootstrap";
 
+.container{
+    max-width: 1170px;
+    margin: auto;
+}
 .fatturate-img{
     background-image: url("../assets/featured_article_1_bg.jpg");
     background-size: cover;
@@ -44,10 +52,13 @@ export default{
         padding-left: 50px;
        
     }
-    .color-btn{
-    background-color: $color-btn;
+    .bg-btn{
+    background-color: $color-secondary;
    
    }
+}
+.fnt-size{
+    font-size: 13px;
 }
 
 </style>

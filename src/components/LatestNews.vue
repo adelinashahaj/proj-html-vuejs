@@ -3,13 +3,13 @@
     <div class="container">
             <h6>PHASELLUS EGET METUS</h6>
             <h3>All the latest news</h3>
-            <div></div>
+            <div class="border-b"></div>
             <div class="row row-cols-3">
                 <div class="col ">
                    
                     <img class="img-fluid" src="../assets/post_feat_img_25-700x441.jpg" alt="">
                     <h5>Morbi vitae dui euismod vulputate sollictudin</h5>
-                    <p>October 11th, 2015 | 2 Comments</p>
+                    <p>October 11th, 2015 | <span class="cl-comm"> 2 Comments</span></p>
                     <p>Donec finibus sit amet arci eget ultricies. Praesent posuere ante ut erat fringilla, vestibulm placerat metus mattis. Aenean dictum vutae nis!</p>
                     
                 </div>
@@ -37,6 +37,7 @@
 <script>
 
 export default{
+    name: "LatestNews",
     data(){
         
     }
@@ -56,6 +57,24 @@ export default{
     }
     & p{
         color: gray;
+        font-size: 13px;
+    }
+    & h5{
+        margin-top: 15px;
+        font-size: 18px;
+    }
+    .cl-comm{
+        color: $color-secondary;
+    }
+    
+    .border-b{
+        border-bottom: 2px solid $color-orange;
+        height: 13px;
+        width: 73px;
+        margin-bottom: 32px;
+        margin-left: 47%;
+        left: 30px;
+       
     }
 }
 

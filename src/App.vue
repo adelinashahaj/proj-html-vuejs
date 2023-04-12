@@ -13,6 +13,9 @@ import Jumbotron from './components/Jumbotron.vue';
 import FaturedArticle from './components/FaturedArticle.vue';
 import LatestNews from './components/LatestNews.vue';
 import LatestNews2 from './components/LatestNews2.vue';
+import TituralGuides from './components/TituralGuides.vue';
+import ForumSections from './components/ForumSections.vue';
+import Jumbotron2 from './components/Jumbotron2.vue';
 export default{
   components: {
     PageHeader,
@@ -21,7 +24,11 @@ export default{
     Jumbotron,
     FaturedArticle,
     LatestNews,
-    LatestNews2
+    LatestNews2,
+    TituralGuides,
+    ForumSections,
+    Jumbotron2
+    
     
   },
     data(){

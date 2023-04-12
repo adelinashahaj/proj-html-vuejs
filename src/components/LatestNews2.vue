@@ -5,7 +5,7 @@
                    
                     <img class="img-fluid" src="../assets/post_feat_img_22-700x441.jpg" alt="">
                     <h5>Morbi vitae dui euismod vulputate sollictudin</h5>
-                    <p>October 11th, 2015 | 2 Comments</p>
+                    <p>October 11th, 2015 | Comments Off</p>
                     <p>Donec finibus sit amet arci eget ultricies. Praesent posuere ante ut erat fringilla, vestibulm placerat metus mattis. Aenean dictum vutae nis!</p>
                     
                 </div>
@@ -34,6 +34,7 @@
 <script>
 
 export default{
+    name: "LatestNews2",
     data(){
         
     }
@@ -53,7 +54,13 @@ export default{
     }
     & p{
         color: gray;
+        font-size: 13px;
     }
+    & h5{
+            margin-top: 15px;
+            font-size: 18px;
+        }
+
 }
 
 
