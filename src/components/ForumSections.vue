@@ -13,7 +13,12 @@
                 
                 <div class="col-2" v-for="(icons, i) in iconsList" :key="i">
                     <div class="circle-orange" >
-                        <i  class="fab" :class="'fa-' + icons.icon"></i>
+                        <i class= 'fas'  :class=" 'fa-' + icons.icon"></i>
+                        
+                        <!--
+                        <i v-if="icons.icon != 'fas' " :class=" 'fa-' + icons.icon"></i>
+                        <i v-else :class=" 'fa-' + icons.family "></i>
+                       -->
                        
                     </div>
                     <h5>{{ icons.text }}</h5>
@@ -39,39 +44,48 @@
 export default{
     name: "ForumSections",
     data(){
+        
         return {
             iconsList: [
                 {
                     text: "News & Community",
                     icon: "file",
+                    family: "fas",
                 },
                 {
                     text: "Apple Forum",
                     icon: "apple",
+                    family: "fab",
                 },
                 {
                     text: "Microsoft Forum",
                     icon: "microsoft",
+                    family: "fab",
                 },
                 {
                     text: "Android Forum",
                     icon: "android",
+                    family: "fab",
                 },
                 {
                     text: "General Discussion",
                     icon: "mug-saucer",
+                    family: "fas",
                 },
                 {
                     text: "Apps & Software",
-                    icon: "grid-2-plus",
+                    icon: "shapes",
+                    family: "fas",
                 },
                 {
                     text: "Gadgets & Stuff",
                     icon: "laptop",
+                    family: "fas",
                 },
                 {
                     text: "Tutorials & Guides",
                     icon: "wrench",
+                    family: "fas",
                 },
             ]
         }

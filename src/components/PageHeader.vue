@@ -8,7 +8,7 @@
 
       <ul class="navbar-links">
         <li v-for="(link, i) in links" :key="i">
-          <a class="nav-link" href="">
+          <a class="nav-link" :class="link.classeAggiuntiva" href="">
             <i class="fas" :class="'fa-' + link.icon"></i>
             {{ link.text }}
           </a>

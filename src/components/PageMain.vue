@@ -109,6 +109,7 @@ export default{
    .keyboard{
     padding: 7px;
     min-width: 490px;
+    border: 1px solid #bababa;
    }
 
 </style>

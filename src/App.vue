@@ -62,6 +62,7 @@ export default{
         {
           href: "#join us",
           text: "Join us",
+          sticky: true
          
         },
         {
