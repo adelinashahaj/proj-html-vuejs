@@ -56,13 +56,11 @@ export default{
         text-align: center;
         letter-spacing: 5px;
         margin:  47px 0px 18px 0px;
-        font-family: 'Fira Sans', sans-serif;
        font-weight: bold;
        color: #535455;
        font-size: 11px;
     }
     & h1{
-        font-family: 'Fira Sans', sans-serif;
         text-align: center;
         font-weight: bold;
         
@@ -74,7 +72,6 @@ export default{
     & h5{
         margin-top: 15px;
         font-size: 18px;
-        font-family: 'Fira Sans', sans-serif;
         font-weight: bold;
     }
     .cl-comm{

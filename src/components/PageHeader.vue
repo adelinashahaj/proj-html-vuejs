@@ -8,12 +8,12 @@
 
       <ul class="navbar-links">
         <li v-for="(link, i) in links" :key="i">
-          <a   class="nav-link" :class="link.sticky == true? '': ''" href="">
+          <a   class="nav-link" :class="link.sticky == true? 'triangolo': ''" href="">
             {{ link.text }}
           </a>
           
         </li>
-        <a href="#" class="btn text-white bg-btn rounded-0 ">Join us</a>
+        <a href="#" class="btn text-white color-btn rounded-0 ">Join us</a>
         <a href=""> <i class="fa-solid fa-magnifying-glass"></i></a>
        
       </ul>
@@ -83,12 +83,25 @@ i {
    
     color: white;
 }
-.bg-btn{
+.color-btn{
     background-color: black;
-    margin-right: 23px;
+    margin-right: 36px;
+    margin-left: 25px;
     padding: 5px 20px;
     font-family: 'Fira Sans', sans-serif;
    }
-
-
+    .triangolo {
+    position: relative;
+}
+.triangolo:after {
+    width: 0;
+    height: 0;
+    border-left: 26px solid transparent;
+    border-right: 26px solid transparent;
+    border-top: 31px solid $color-navbar-bg;
+    position: absolute;
+    content: "";
+    top: 62px;
+    left: 15px;
+}
 </style>

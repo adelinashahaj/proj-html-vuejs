@@ -59,7 +59,6 @@ export default{
     & h5{
             margin-top: 15px;
             font-size: 18px;
-            font-family: 'Fira Sans', sans-serif;
             font-weight: bold;
         }
 

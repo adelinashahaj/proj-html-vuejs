@@ -95,7 +95,6 @@ export default{
     }
     & h5{
         margin:  47px 0px 18px 0px;
-        font-family: 'Fira Sans', sans-serif;
        font-weight: bold;
        color: #535455;
        letter-spacing: 5px;
@@ -109,7 +108,6 @@ export default{
     background-color: $color-secondary;
     margin-left: 50px;
     padding: 8px 55px;
-    font-family: 'Fira Sans', sans-serif;
     font-weight: bold;
    
    }

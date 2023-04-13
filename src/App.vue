@@ -37,6 +37,7 @@ export default{
         {
           href: "#home",
           text: "Home",
+          sticky: true,
          
         },
         {

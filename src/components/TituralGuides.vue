@@ -4,7 +4,7 @@
             <div class="col-sm-6 col-md-8">
                 <div class="fatturate2-img">
                 <div class="text-fatured">
-                    <p>REVIEWED PRODUCT</p>
+                    <h6>REVIEWED PRODUCT</h6>
                     <h1>Mauris viverra atisan ipsum eget felis prims efficitur varius</h1>
                     <p>In quis lectus sed leo elementum faucibus in dapibus dictum.
                      Nulla molestie tortor nec lectus venenatis, sed blandit dui, dolor at bibendum.</p>
@@ -83,17 +83,15 @@ export default{
         padding-left: 50px;
 
         & h1 {
-        font-family: 'Fira Sans', sans-serif;
          font-weight: bold;
         }
-        & p{
-          font-family: 'Fira Sans', sans-serif;
+        & h6{
+            letter-spacing: 5px;
         }
             
     }
 .color-buttone{
     background-color: $color-secondary;
-    font-family: 'Fira Sans', sans-serif;
     font-weight: bold;
    
 }
@@ -110,7 +108,6 @@ export default{
     }
     & h6{
         font-size: 17px;
-        font-family: 'Fira Sans', sans-serif;
         font-weight: bold;
     }
     
@@ -129,8 +126,7 @@ export default{
     font-size: 13px;
 }
 h4{
-    font-family: 'Fira Sans', sans-serif;
-            font-weight: bold;  
+    font-weight: bold;  
 }
 
 </style>

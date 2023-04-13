@@ -3,9 +3,9 @@
         <div class="container">
             <div class="fatturate-img">
                 <div class="text-fatured">
-                    <p>FATURED ARTICLE</p>
+                    <h6>FATURED ARTICLE</h6>
                     <h1>Cras malesuada et orci eget pharetra</h1>
-                    <p>Discuss all thr latest technology news and trends</p>
+                    <p>In quis lectus sed leo elementum faucibus in dapibus dictum. Nullamolestie tortor nec lectus venenatis, sed blandit dui,<br> dolor at bibendum sadips ets ipsums dolores ficilis uns leo lectus.</p>
                     <a href="#" class="btn text-white bg-btn rounded-0 ">READ MORE <i class="fa-solid fa-angle-right fnt-size"></i> </a>
                             
                 </div>
@@ -51,17 +51,15 @@ export default{
         padding-top: 200px;
         padding-left: 50px;
         & h1{
-            font-family: 'Fira Sans', sans-serif;
             font-weight: bold;
         }
-        & p{
-            font-family: 'Fira Sans', sans-serif;
+        & h6{
+            letter-spacing: 5px;
         }
        
     }
     .bg-btn{
     background-color: $color-secondary;
-    font-family: 'Fira Sans', sans-serif;
     font-weight: bold;
    
    }

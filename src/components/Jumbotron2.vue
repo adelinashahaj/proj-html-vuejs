@@ -42,16 +42,12 @@ export default{
         text-align: center;
         & h1{
             font-size: 64px;
-            font-family: 'Fira Sans', sans-serif;
         }
-        & p{
-            font-family: 'Fira Sans', sans-serif;
-        }
+       
 
     }
    .color-btn{
     background-color: $color-primary;
-    font-family: 'Fira Sans', sans-serif;
     font-weight: bold;
    
    }

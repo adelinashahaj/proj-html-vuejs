@@ -14,9 +14,8 @@
                 <div class="col-2" v-for="(icons, i) in iconsList" :key="i">
                     <div class="circle-orange" >
 
-                        <i :class="icons.family == true? 'fab fa-'+ icons.icon : 'fas fa-'+ icons.icon"  ></i>
+                        <i :class="icons.family == true? 'fab fa-'+ icons.icon : 'fas fa-'+ icons.icon" ></i>
     
-                       
                     </div>
                     <h5>{{ icons.text }}</h5>
                     
@@ -108,7 +107,7 @@ export default{
         margin-top: 30px;
         font-size: 13px;
         padding-top: 25px;
-        font-family: 'Fira Sans', sans-serif;
+        font-weight: bold;
 
     }
 }
@@ -126,7 +125,6 @@ export default{
        
     }
     & h1{
-        font-family: 'Fira Sans', sans-serif;
         font-weight: bold;
     }
 }
@@ -154,7 +152,6 @@ export default{
         font-size: 16px;
         text-align: center;
         margin-top: 5px;
-        font-family: 'Fira Sans', sans-serif;
         font-weight: bold;
     }
 
@@ -166,7 +163,6 @@ export default{
 }
 h4{
     margin:  100px 0px 18px 0px;
-        font-family: 'Fira Sans', sans-serif;
        font-weight: bold;
        color: #535455;
        letter-spacing: 5px;

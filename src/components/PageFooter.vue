@@ -6,11 +6,14 @@
                 <div class="row-2">
                     <div class="col-3" v-for="link in menuLinks">
                         <h4>{{ link.title }}</h4>
+                        
+                        <div v-for="voce in link.links" class="elemlista">
+                            <span class="freccetina">&rsaquo;</span>
+                            <a href=""> {{ voce }}</a>
+                    
+                        </div>
                         <p>{{ link.text }}</p>
 
-                        <ul>
-                            <li v-for="voce in link.links" class="elemlista"><span class="freccetina">&rsaquo;</span>{{ voce }}</li>
-                        </ul>
                     </div>
                 </div>
             </div>
@@ -49,11 +52,10 @@ export default {
                 },
                 {
                     title: "POPULAR TOPICS",
-                   
                     links: [
                         " Nam a dolor volutpat massa auctor sempre",
                         " Sed euismod nunc urna fermentum arcu dapibus fringilla.",
-                        " Dove Andioamo 3",
+                        " Cras lacinia tellus id mauris finibus lacus molestie",
                         " Cras lacinia tellus id mauris finibus lacus molestie",
                         " curabitur a scelerisque lingua"
                     ]
@@ -94,8 +96,74 @@ footer {
 
 }
 
-.footer_bot {
+.footer_top .container {
+    max-width: 1170px;
+    margin: auto;
+
+    .row-2 {
+        display: flex;
+        .col-3{
+            padding: 0px 22px 0px 0px;
+        }
+        .elemlista{
+        list-style: none;
+        border-bottom: 1px solid $color-bg;
+        padding: 6px;
+        font-size: 14px;
+        
+       }
+      
+       & h4 {
+            text-transform: uppercase;
+            color: black;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        & h4:first-child{
+            margin-bottom: 25px;
+            
+        }
+        
+        .freccetina{
+            font-size: 23px;
+            margin-left: -10px;
+        }
+        p{
+            color: gray;
+            font-size: 14px;
+            padding-top: 14px;
+        }
+        & a {
+        text-decoration: none;
+        color: black;
+        }
+
+    }
+    
+}
+
+
+ul{
+    margin-top: -11px;
+}
+
+.footer_bot .container{
     z-index: 1;
+    max-width: 1170px;
+    margin: auto;
+
+    .signup {
+    margin-top: 35px;
+
+        p {
+            color: gray;
+            
+        }
+
+        .text-c {
+            color: black;
+        }
+    }
 
     .socials {
         flex-basis: 35%;
@@ -143,55 +211,5 @@ footer {
         }
     }
 
-}
-
-.footer_top .container {
-    max-width: 1170px;
-    margin: auto;
-
-    .row-2 {
-        display: flex;
-
-        & li{
-        list-style: none;
-        border-bottom: 1px solid $color-bg;
-        padding: 5px;
-        
-       }
-
-       & h4 {
-            text-transform: uppercase;
-            color: black;
-            font-size: 20px;
-            padding-left: 28px;
-            font-family: 'Fira Sans', sans-serif;
-            font-weight: bold;
-        }
-        & h4:first-child{
-            margin-bottom: 25px;
-        }
-        .freccetina{
-            font-size: 23px;
-            margin-left: -10px;
-        }
-        p{
-            color: gray;
-            padding-left: 28px;
-        }
-
-    }
-    
-}
-
-.signup {
-    margin-top: 35px;
-
-    p {
-        color: gray;
-    }
-
-    .text-c {
-        color: black;
-    }
 }
 </style>

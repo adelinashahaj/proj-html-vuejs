@@ -30,7 +30,6 @@ export default{
   background-size: cover;
   background-repeat: no-repeat;
   height: 465px;
-  font-family: 'Fira Sans', sans-serif;
     & img{
         height: 100%;
     }
@@ -47,7 +46,6 @@ export default{
     }
    .color-btn{
     background-color: $color-primary;
-    font-family: 'Fira Sans', sans-serif;
     font-weight: bold;
    
    }
