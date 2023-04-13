@@ -2,7 +2,7 @@
 <template>
     <div class="container">
             <h6>PHASELLUS EGET METUS</h6>
-            <h3>All the latest news</h3>
+            <h1>All the latest news</h1>
             <div class="border-b"></div>
             <div class="row row-cols-3">
                 <div class="col ">
@@ -52,8 +52,20 @@ export default{
 .container{
     max-width: 1170px;
     margin: auto;
-    & h6, h3{
+    & h6{
         text-align: center;
+        letter-spacing: 5px;
+        margin:  47px 0px 18px 0px;
+        font-family: 'Fira Sans', sans-serif;
+       font-weight: bold;
+       color: #535455;
+       font-size: 11px;
+    }
+    & h1{
+        font-family: 'Fira Sans', sans-serif;
+        text-align: center;
+        font-weight: bold;
+        
     }
     & p{
         color: gray;
@@ -62,6 +74,8 @@ export default{
     & h5{
         margin-top: 15px;
         font-size: 18px;
+        font-family: 'Fira Sans', sans-serif;
+        font-weight: bold;
     }
     .cl-comm{
         color: $color-secondary;

@@ -94,7 +94,12 @@ export default{
        
     }
     & h5{
-        padding-top: 10px;
+        margin:  47px 0px 18px 0px;
+        font-family: 'Fira Sans', sans-serif;
+       font-weight: bold;
+       color: #535455;
+       letter-spacing: 5px;
+       font-size: 11px;
     }
     & h3{
         margin-bottom: 55px;
@@ -104,6 +109,8 @@ export default{
     background-color: $color-secondary;
     margin-left: 50px;
     padding: 8px 55px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: bold;
    
    }
    .keyboard{

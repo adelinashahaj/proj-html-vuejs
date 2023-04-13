@@ -19,7 +19,7 @@
             <hr>
             <div class="container d-flex ">
                 <div class="signup">
-                    <p>Copyright 2012-2020 | Avada Theme by <span class="text-c">Theme Fusion</span> | All Rights Reserved |
+                    <p> &copy;Copyright 2012-2020 | Avada Theme by <span class="text-c">Theme Fusion</span> | All Rights Reserved |
                         Powered by <span class="text-c">WordPress</span> </p>
                 </div>
                 <div class="socials d-flex justify-content-end">
@@ -51,7 +51,7 @@ export default {
                     title: "POPULAR TOPICS",
                    
                     links: [
-                        " Na a dolor volutpat massa auctor sempre",
+                        " Nam a dolor volutpat massa auctor sempre",
                         " Sed euismod nunc urna fermentum arcu dapibus fringilla.",
                         " Dove Andioamo 3",
                         " Cras lacinia tellus id mauris finibus lacus molestie",
@@ -156,6 +156,7 @@ footer {
         list-style: none;
         border-bottom: 1px solid $color-bg;
         padding: 5px;
+        
        }
 
        & h4 {
@@ -163,6 +164,7 @@ footer {
             color: black;
             font-size: 20px;
             padding-left: 28px;
+            font-family: 'Fira Sans', sans-serif;
             font-weight: bold;
         }
         & h4:first-child{

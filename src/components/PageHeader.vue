@@ -8,12 +8,17 @@
 
       <ul class="navbar-links">
         <li v-for="(link, i) in links" :key="i">
-          <a class="nav-link" :class="link.classeAggiuntiva" href="">
-            <i class="fas" :class="'fa-' + link.icon"></i>
+          <a   class="nav-link" :class="link.sticky == true? '': ''" href="">
             {{ link.text }}
           </a>
+          
         </li>
+        <a href="#" class="btn text-white bg-btn rounded-0 ">Join us</a>
+        <a href=""> <i class="fa-solid fa-magnifying-glass"></i></a>
+       
       </ul>
+     
+                            
     </nav>
   </header>
   <div>
@@ -40,13 +45,18 @@ export default{
 
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @use "../styles/partials/variables" as *;
+@use "bootstrap";
+
 
 header {
   background-color: $color-navbar-bg;
 }
-
+.container{
+  max-width: 1170px;
+  margin: auto;
+}
 nav{
     display: flex;
    justify-content: space-between;
@@ -69,6 +79,16 @@ a.nav-link {
     padding: 20px;
     color: white;
 }
+i {
+   
+    color: white;
+}
+.bg-btn{
+    background-color: black;
+    margin-right: 23px;
+    padding: 5px 20px;
+    font-family: 'Fira Sans', sans-serif;
+   }
 
 
 </style>

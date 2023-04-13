@@ -50,10 +50,19 @@ export default{
         color: white;
         padding-top: 200px;
         padding-left: 50px;
+        & h1{
+            font-family: 'Fira Sans', sans-serif;
+            font-weight: bold;
+        }
+        & p{
+            font-family: 'Fira Sans', sans-serif;
+        }
        
     }
     .bg-btn{
     background-color: $color-secondary;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: bold;
    
    }
 }

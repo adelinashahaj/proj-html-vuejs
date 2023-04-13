@@ -59,15 +59,7 @@ export default{
           text: "Concatct us",
          
         },
-        {
-          href: "#join us",
-          text: "Join us",
-          sticky: true
-         
-        },
-        {
-          icon: "magnifying-glass"
-        },
+        
       ],
       }
 

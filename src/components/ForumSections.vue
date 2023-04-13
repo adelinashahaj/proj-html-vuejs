@@ -6,19 +6,16 @@
 
          </div>
         <div class="container">
-            <h6 class="text-center">PHASELLUS EGET METUS</h6>
-            <h3 class="text-center">Forum Sections</h3>
+            <h4 class="text-center">PHASELLUS EGET METUS</h4>
+            <h1 class="text-center">Forum Sections</h1>
             <div class="border-b"></div>
             <div class="row-1 " >
                 
                 <div class="col-2" v-for="(icons, i) in iconsList" :key="i">
                     <div class="circle-orange" >
-                        <i class= 'fas'  :class=" 'fa-' + icons.icon"></i>
-                        
-                        <!--
-                        <i v-if="icons.icon != 'fas' " :class=" 'fa-' + icons.icon"></i>
-                        <i v-else :class=" 'fa-' + icons.family "></i>
-                       -->
+
+                        <i :class="icons.family == true? 'fab fa-'+ icons.icon : 'fas fa-'+ icons.icon"  ></i>
+    
                        
                     </div>
                     <h5>{{ icons.text }}</h5>
@@ -55,17 +52,17 @@ export default{
                 {
                     text: "Apple Forum",
                     icon: "apple",
-                    family: "fab",
+                    family: true,
                 },
                 {
                     text: "Microsoft Forum",
                     icon: "microsoft",
-                    family: "fab",
+                    family: true,
                 },
                 {
                     text: "Android Forum",
                     icon: "android",
-                    family: "fab",
+                    family: true,
                 },
                 {
                     text: "General Discussion",
@@ -111,6 +108,7 @@ export default{
         margin-top: 30px;
         font-size: 13px;
         padding-top: 25px;
+        font-family: 'Fira Sans', sans-serif;
 
     }
 }
@@ -126,6 +124,10 @@ export default{
         margin-left: 47%;
         left: 30px;
        
+    }
+    & h1{
+        font-family: 'Fira Sans', sans-serif;
+        font-weight: bold;
     }
 }
 .col-2{
@@ -152,6 +154,8 @@ export default{
         font-size: 16px;
         text-align: center;
         margin-top: 5px;
+        font-family: 'Fira Sans', sans-serif;
+        font-weight: bold;
     }
 
 }
@@ -159,6 +163,14 @@ export default{
    justify-content: space-between;
     display: flex;
     flex-wrap: wrap;
+}
+h4{
+    margin:  100px 0px 18px 0px;
+        font-family: 'Fira Sans', sans-serif;
+       font-weight: bold;
+       color: #535455;
+       letter-spacing: 5px;
+       font-size: 11px;
 }
 
 </style>

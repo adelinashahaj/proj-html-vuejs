@@ -8,7 +8,7 @@
                     <h1>Mauris viverra atisan ipsum eget felis prims efficitur varius</h1>
                     <p>In quis lectus sed leo elementum faucibus in dapibus dictum.
                      Nulla molestie tortor nec lectus venenatis, sed blandit dui, dolor at bibendum.</p>
-                    <a href="#" class="btn text-white bg-btn rounded-0 ">READ MORE <i class="fa-solid fa-angle-right fnt-size"></i></a>
+                    <a href="#" class="btn text-white color-buttone rounded-0 ">READ MORE <i class="fa-solid fa-angle-right fnt-size"></i></a>
                             
                 </div>
                 </div>
@@ -19,7 +19,7 @@
                 <div class="img-guides">
                     <img src="../assets/post_feat_img_23-147x118.jpg" alt="">
                     <div class="text-guides">
-                        <h5>Donec ornare pretium eget scelisque justo</h5>
+                        <h6>Donec ornare pretium eget scelisque justo</h6>
                     <p>October 11th, 2015 | Comments Off</p>
                     </div>
                     
@@ -27,7 +27,7 @@
                 <div class="img-guides">
                     <img src="../assets/post_feat_img_22-147x118.jpg" alt="">
                     <div class="text-guides">
-                        <h5>Donec ornare pretium eget scelisque justo</h5>
+                        <h6>Donec ornare pretium eget scelisque justo</h6>
                     <p>October 11th, 2015 | Comments Off</p>
                     </div>
                     
@@ -35,7 +35,7 @@
                 <div class="img-guides">
                     <img src="../assets/post_feat_img_20-147x118.jpg" alt="">
                     <div class="text-guides">
-                        <h5>Donec ornare pretium eget scelisque justo</h5>
+                        <h6>Donec ornare pretium eget scelisque justo</h6>
                     <p>October 11th, 2015 | Comments Off</p>
                     </div>
                     
@@ -77,16 +77,26 @@ export default{
     & img{
             height: 100%;
         }
-        .text-fatured{
+     .text-fatured{
         color: white;
-        padding-top: 120px;
+         padding-top: 120px;
         padding-left: 50px;
-       
+
+        & h1 {
+        font-family: 'Fira Sans', sans-serif;
+         font-weight: bold;
+        }
+        & p{
+          font-family: 'Fira Sans', sans-serif;
+        }
+            
     }
-    .color-btn{
+.color-buttone{
     background-color: $color-secondary;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: bold;
    
-   }
+}
 }
 .img-guides {
     display: flex;
@@ -98,8 +108,10 @@ export default{
         color: gray;
         font-size: 11px;
     }
-    & h5{
+    & h6{
         font-size: 17px;
+        font-family: 'Fira Sans', sans-serif;
+        font-weight: bold;
     }
     
 }
@@ -115,6 +127,10 @@ export default{
 }
 .fnt-size{
     font-size: 13px;
+}
+h4{
+    font-family: 'Fira Sans', sans-serif;
+            font-weight: bold;  
 }
 
 </style>
