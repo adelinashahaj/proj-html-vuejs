@@ -70,8 +70,6 @@ import TituralGuides from './TituralGuides.vue';
 
 export default{
     name: "PageMain",
-    data() {
-    },
     components: { FaturedArticle, LatestNews, LatestNews2, TituralGuides, ForumSections, Jumbotron2 }
 }
 

@@ -35,9 +35,7 @@
 
 export default{
     name: "LatestNews2",
-    data(){
-        
-    }
+   
 }
 
 </script>

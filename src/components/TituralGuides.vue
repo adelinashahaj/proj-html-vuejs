@@ -53,9 +53,7 @@
 
 export default{
     name: "TituralGuides",
-    data(){
-        
-    }
+   
 }
 
 </script>

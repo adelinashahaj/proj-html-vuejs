@@ -16,9 +16,7 @@
 <script>
 export default{
     name: "Jumbotron2",
-    data(){
-        
-    }
+    
 }
 
 </script>

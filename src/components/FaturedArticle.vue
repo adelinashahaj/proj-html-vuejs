@@ -23,9 +23,7 @@
 <script>
 export default{
     name: "FaturedArticle",
-    data(){
-
-    }
+   
 
 }
 </script>
