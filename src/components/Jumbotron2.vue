@@ -5,6 +5,7 @@
             <p>Nulla molestie tortor nec lectus venenatis, sed blandit dui finibus. 
                 Curabitur feugiat <br> vulputate purus ipsums dolores ficilis un etra.</p>
             <a href="#" class="btn text-white color-btn rounded-0 ">SING UP! <i class="fa-solid fa-angle-right fnt-size"></i></a>
+           
                 
        </div>
        
@@ -23,6 +24,7 @@ export default{
 
 <style lang="scss" scoped>
 @use "../styles/partials/variables" as *;
+@use "bootstrap";
 
 .jumbo-img{
   background-image: url("../../public/join_now_cta_bg.jpg");

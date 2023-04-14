@@ -13,8 +13,9 @@
           </a>
           
         </li>
-        <a href="#" class="btn text-white color-btn rounded-0 ">Join us</a>
-        <a href=""> <i class="fa-solid fa-magnifying-glass"></i></a>
+       
+        <a href="#"><button class=" text-white color-btn rounded-0 " >Join us</button></a>
+        <a href="#"> <i class="fa-solid fa-magnifying-glass"></i></a>
        
       </ul>
      
@@ -89,6 +90,7 @@ i {
     margin-left: 25px;
     padding: 5px 20px;
     font-family: 'Fira Sans', sans-serif;
+    border: none;
    }
     .triangolo {
     position: relative;

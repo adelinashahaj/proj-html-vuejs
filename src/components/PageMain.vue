@@ -8,7 +8,7 @@
             dolor at, bibendum purus. Donec vehicula nec tortor ac finibus.</p> 
         </p>
         </div>
-
+      
     </div>
      <!--la seconda sezione latest news-->
      <section class="all-news  py-5">
@@ -44,17 +44,13 @@
       <div class="section-info">
         <div class="container-info">
             <h3>Subscribe to our Newsletter</h3>
-            <input type="text" placeholder="Insert your email*" class="keyboard" >
-            <a href="#" class="btn text-white bg-btn rounded-0 ">SEND</a>
+            <input type="text" placeholder="Insert your email*" class="keyboard" v-model="newTask">
+            <button class=" text-white bgcolor-btn rounded-0 " @click="addTask">SEND</button>
+            <div v-show="error" class="error " >Errore, il testo deve essere lungo almeno 5 caratteri!</div>
                             
         </div>
 
     </div>
-
-
-    
-
-    
   
 </template>
 
@@ -66,17 +62,39 @@ import LatestNews from './LatestNews.vue';
 import LatestNews2 from './LatestNews2.vue';
 import TituralGuides from './TituralGuides.vue';
 
-
-
 export default{
     name: "PageMain",
-    components: { FaturedArticle, LatestNews, LatestNews2, TituralGuides, ForumSections, Jumbotron2 }
+    components: { FaturedArticle, LatestNews, LatestNews2, TituralGuides, ForumSections, Jumbotron2 },
+    data(){
+        return{
+            newTask: "",
+            error: false,
+            taskList: [
+                
+            ]
+        }
+
+    },
+    methods: {
+        addTask(){
+
+            if(this.newTask.length >= 5){
+                this.taskList.push(this.newTask);
+                this.newTask= "";
+                this.error = false;
+            }else{
+                this.error = true;
+            }
+          
+        }
+    }
 }
 
 </script>
 
 <style lang="scss" scoped>
 @use "../styles/partials/variables" as *;
+
 
 .section-info{
    background-color: $color-bg;
@@ -102,11 +120,12 @@ export default{
         margin-bottom: 55px;
     }
 }
-.bg-btn{
+.bgcolor-btn{
     background-color: $color-secondary;
     margin-left: 50px;
     padding: 8px 55px;
     font-weight: bold;
+    border: none;
    
    }
    .keyboard{
@@ -114,5 +133,13 @@ export default{
     min-width: 490px;
     border: 1px solid #bababa;
    }
-
+   .error{
+    color: red;
+    text-align: center;
+   }
+.color-buttone{
+    background-color: $color-secondary;
+    font-weight: bold;
+   
+} 
 </style>
